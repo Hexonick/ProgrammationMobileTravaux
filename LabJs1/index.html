@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<meta charset="utf-8 /">
+		<script src="script.js"></script>
+		<style>
+			#container{
+				
+			}
+			
+			.trav{
+				background-color:#888;
+				height: 150px;
+				width:200px;
+				padding:10px;
+				margin-right:5px;
+				color:white;
+				float:left;
+				overflow:auto;
+			}
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h2>Utiliser f5 pour revenir au depart!</h2>
+			<div class="trav">
+				<h4>Travail 1</h4>
+				<form>
+					<input type="button" name="btnTrav1" value="Table de multiplication" onclick="tableMulti()"/>
+				</form>
+				<p name="trav1"></p>
+			</div>
+			
+			<div class="trav">
+				<h4>Travail 2</h4>
+				<form>
+					<input type="button" name="btnTrav2" value="Calculatrice" onclick="calcu()"/>
+				</form>
+			</div>
+			
+			<div class="trav">
+				<h4>Travail 3</h4>
+				<form>
+					<input type="button" name="btnTrav3" value="Plus petit ou plus grand" onclick="jeu()"/>
+				</form>
+			</div>
+		</div>
+	</body>	
+</html>
