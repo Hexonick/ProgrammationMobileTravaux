@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta charset="utf-8 /">
+		<script src="script.js"></script>
+		<style>
+			#container{
+				background-color: #eee;
+				padding: 10px;
+				padding-top:5px;
+				padding-bottom:1px;
+				width:300px;
+				overflow:auto;
+			}
+			
+			.trav{
+				background-color:#888;
+				height: auto;
+				width:200px;
+				padding:10px;
+				margin-right:5px;
+				color:white;
+				float:left;
+				overflow:auto;
+			}					
+		</style>
+	</head>
+	<body>
+		<div id="container">	
+			<form name = "inscription" method = "post" onsubmit = "return valider(this)">
+				<fieldset>
+				<legend>Inscription </legend>
+					<input autofocus required type = "text" name = "txtUti" placeholder = "Nom d'utilisateur" size = "25px" maxlength = "10" /></br></br>
+					<input required type = "password" name = "txtMDP" placeholder = "Mot de passe" size = "25px" maxlength = "10"/></br></br>
+					<input required type = "text" name = "txtNom" placeholder = "Nom" size = "25px" maxlength = "15"/></br></br>
+					<input required type = "text" name = "txtPrenom" placeholder = "Prenom" size = "25px" maxlength = "15"/></br></br>
+					<input required type = "email" name = "txtEmail" placeholder = "Adresse courriel" size = "25px" /></br></br>
+					<input type = "submit" name = "btnSubmit" value = "Envoyer"></br></br>
+					<input type = "reset" name = "btnReset" value = "Reinitialiser">
+				</fieldset>
+			</form>
+			<form name = "connection" method = "post" onsubmit = "return valider2(this);">
+				<fieldset>
+				<legend>Connection</legend>
+					<input autofocus required type = "text" name = "txtUti" placeholder = "Nom d'utilisateur" size = "25px" maxlength = "10" /></br></br>
+					<input required type = "password" name = "txtMDP" placeholder = "Mot de passe" size = "25px" maxlength = "10"/></br></br>
+					<input type = "submit" name = "btnSubmit" value = "Envoyer">
+				</fieldset>
+			</form>
+		</div>
+	</body>	
+</html>
