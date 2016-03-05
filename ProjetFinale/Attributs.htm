@@ -1,0 +1,205 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset=utf-8>
+    <title>Dark Souls wiki</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+    <!-- Enlever les éléments HTML5 -->
+	<!--[if lte IE 8]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" language="javascript" src="jquery.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+			$(window).scroll(function(){
+				$('#menu').stop().animate({'top':$(window).scrollTop()},'slow','easeInOutCirc');
+			});	
+			
+			$("#firstpane p.menu_head").click(function(){	   
+			$(this).css({backgroundImage:"url(down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+			$(this).siblings().css({backgroundImage:"url(left.png)"});
+			});
+
+		});
+    </script>
+    
+    <style>
+
+.menu_list {
+	width: 150px;
+}
+.menu_head {
+	height:25px;
+	text-align:center;
+	padding:5px;
+	cursor:pointer;
+	position:relative;
+	margin:1px;
+	opacity:0.85;
+    font-weight:bold;
+    background:#666;
+}
+
+.menu_head:hover{
+	background:#900;
+}
+
+.menu_body {
+	width:125px;
+	background:#666;
+	opacity:0.85;
+	display:none;
+}
+.menu_body a {
+	display:block;
+  	color:#000;
+  	background-color:#666;
+  	opacity:0.85;
+  	padding:10px;
+  	font-weight:bold;
+  	text-decoration:none;
+}
+.menu_body a:hover {
+  color: #900;
+}
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <header>
+  	<img width="250" height="150" src="image/dark_souls.jpg" />
+  </header>
+  
+  <div id="container">	 
+    
+  <div id="container2">
+  
+  	<nav id="menu">
+            
+            <div id="firstpane" class="menu_list">
+              <a href="index.htm"><p class="menu_head">Accueil</p></a>
+                <div class="menu_body">
+                </div>
+              <p class="menu_head">Equipements</p>
+                <div class="menu_body">
+                    <a href="Epees.htm">Épées</a>
+                    <a href="Haches.htm">Haches</a>
+                    <a href="Massu.htm">Massu</a>
+                </div>
+              <p class="menu_head">Sort</p>
+                <div class="menu_body">
+                    <a href="Pyromancie.htm">Pyromancies</a>
+                    <a href="Sorcelerie.htm">Sorcelleries</a>
+                    <a href="Miracles.htm">Miracles</a>
+               </div>
+              <p class="menu_head">Personnage</p>
+                <div class="menu_body">
+                    <a href="Classes.htm">Classes</a>
+                    <a href="Attributs.htm">Attributs</a>
+                    <a href="Humanity.htm">Humanité</a>
+               </div>
+            </div>
+    
+    </nav>
+        
+    <article>
+        
+        <div class="Equip">
+        
+        	<img width="90" height="90" src="image/Attibuts/icon_dexterity.png" />
+            <p>Dexterity controls the player's Attack Power for weapons that scale with Dexterity and increases casting speed for most spells.</p>
+            <ol>
+            	<li>Some weapons require a minimum dexterity level to be wielded properly.</li>
+                <li>If you do not meet the minimum dexterity required, you will stagger after every hit on an opponent.</li>
+                <li>The speed of spell casting increases with dexterity, max speed at 45 dex.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img width="90" height="90" src="image/Attibuts/icon_endurance.png" />
+            <p>Endurance controls the player's Stamina, max Equip Load and resistance to Bleeding.</p>
+            <ol>
+            	<li>Stamina will not be increased after 40 Endurance, but Equip Load and Bleed Resistance will.</li>
+                <li>The roll and run speed of the player will vary with the amount of equipped weight.</li>
+                <li>Max equip burden can be increased further by wearing Havel's Ring, Ring of Favor and Protection or Mask of the Father.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img width="90" height="90" src="image/Attibuts/icon_faith.png" />
+            <p>Faith governs the Miracle Power and also increases the Magic Defense. It also controls the player's attack power for weapons that scale with Faith.</p>
+            <ol>
+            	<li>Miracles require a minimum faith level to cast. (You can acquire without the required stats and even attune the spell.)</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img width="90" height="90" src="image/Attibuts/icon_intelligence.png" />
+            <p>Intelligence governs the Sorcery Power. It also controls the player's attack power for weapons that scale with Intelligence.</p>
+            <ol>
+            	<li>Sorceries require a minimum intelligence level to cast.(You can acquire without the required stats and even attune the spell, but attempting to cast will leave your character scratching their head, literally.)</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img width="90" height="90" src="image/Attibuts/icon_resistance.png" />
+            <p>Resistance increases physical and flame defense and resistance to poison.</p>
+            <ol>
+            	<li>Defense (including physical and flame) are also affected by your total level and the diminishing returns from both appear to stack, causing resistance's effectiveness at higher levels to become negligible. Poison defense does not suffer from this double diminishing return effect, although armor and the poisonbite ring are better options.</li>
+                <li>Resistance offers a static debuff on damage. 1 point of res = 1 point less damage taken, or 1% less damage taken, whichever value is -lower-. Attacks that would normally kill you have about a 7 time multiplier on damage reduced. This only has effect on PvE enemies in game, not other Players and hence is not useful for PvP.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img width="90" height="90" src="image/Attibuts/icon_strength.png" />
+            <p>Strength controls the player's Attack Power for weapons that scale with Strength.</p>
+            <ol>
+            	<li>Most weapons require a minimum strength level to be wielded properly.</li>
+                <li>Two-handing the weapon will give a 50% strength bonus, affecting both the weapon requirements and damage modifier.</li>
+            </ol>
+            
+        </div>
+        
+    </article>
+    
+    <!----- Fin Contenu----->
+    
+    <footer>
+    
+    	<p>This website has been made by Alexandre Tremblay © 2013, this page is a school project.</p>
+    	<a href="https://twitter.com/"><img src="image/twitter_logo.png" /></a>
+        <a href="http://www.youtube.com/"><img src="image/youtube_logo.png" /></a>
+        <a href="https://www.facebook.com/"><img src="image/facebook_logo.png" /></a>
+        
+  </footer>
+    
+  </div>
+  <!----- Fin Container2----->
+  
+  </div>
+  <!----- Fin Container----->
+  
+  </body>
+
+</html>

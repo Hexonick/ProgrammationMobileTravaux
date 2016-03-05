@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset=utf-8>
+    <title>Dark Souls wiki</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <link href="jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.css" rel="stylesheet">
+	<script src="jquery-ui-1.10.2.custom/js/jquery-1.9.1.js"></script>
+	<script src="jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+			$(window).scroll(function(){
+				$('#menu').stop().animate({'top':$(window).scrollTop()},'slow','easeInOutCirc');
+			});
+			
+			$(function() {		
+				$( "#accordion" ).accordion();
+			});
+	
+		});
+    </script>
+
+  </head>
+  
+  <body>
+  
+  <header>
+  	<img width="250" height="150" src="image/dark_souls.jpg" />
+  </header>
+  
+  <div id="container">	 
+    
+  <div id="container2">
+  
+  	<nav id="menu">
+            
+            <div id="accordion">
+                <h3 class="disable">Accueil</h3>
+                <div></div>
+                <h3>Equipements</h3>
+                <div>
+                	<ul id="liste">
+                        <a href="Epees.htm"><li>Épées</li></a>
+                        <a href="Haches.htm"><li>Haches</li></a>
+                        <a href="Massu.htm"><li>Personnages</li></a>
+        			</ul>
+        		</div>
+                <h3>Personnage</h3>
+                <div>
+                	<ul id="liste">
+                        <a href="#"><li>Classes</li></a>
+                        <a href="#"><li>Statistique</li></a>
+                        <a href="#"><li>Humanité</li></a>
+        			</ul>
+                </div>
+                <h3>Sorts</h3>
+                <div>
+                	<ul id="liste">
+                        <a href="#"><li>Pyromancie</li></a>
+                        <a href="#"><li>Sorceries</li></a>
+                        <a href="#"><li>Miracle</li></a>
+        			</ul>
+                </div>
+            </div>
+    
+    </nav>
+        
+    <article>
+        
+        <div class="contenu">
+        
+    		<p>Welcome in our brand new website for the Dark Souls wiki. All the information into the site is safe and proven by the players.
+            </p>
+            
+    	</div>
+        
+        <div class="contenu">
+        
+        	<p>
+            Developed by From Software, Dark Souls is the spiritual successor to the Playstation exclusive Demon's Souls, an action RPG experience that surprised by not only gaining critical acclaim, but obtaining publishing in 3 regions and racking estimated sales of over 1 million units. The original game's appeal lay with its renowned difficulty and trial-and-error approach, one that Dark Souls promises to sustain, thus attracting Demon's Souls' fanbase. The developer and publisher had both stated that there were no intentions for DLC however, following the release of the Prepare to Die Edition for PC with added content, an expansion DLC was released for both PS3 and Xbox360, titled Artorias of the Abyss.
+            </p>
+            
+        </div>
+        
+    </article>
+    
+    <!----- Fin Contenu----->
+    
+  </div>
+  <!----- Fin Container2----->
+  
+  </div>
+  <!----- Fin Container----->
+  
+  <footer>
+    
+    	<p>This website has been made by Alexandre Tremblay © 2013, this page is a school project.</p>
+    	<a href="https://twitter.com/"><img src="image/twitter_logo.png" /></a>
+        <a href="http://www.youtube.com/"><img src="image/youtube_logo.png" /></a>
+        <a href="https://www.facebook.com/"><img src="image/facebook_logo.png" /></a>
+        
+  </footer>
+  
+  </body>
+
+</html>

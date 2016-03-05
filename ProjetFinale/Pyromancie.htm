@@ -1,0 +1,209 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset=utf-8>
+    <title>Dark Souls wiki</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+    <!-- Enlever les éléments HTML5 -->
+	<!--[if lte IE 8]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" language="javascript" src="jquery.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+			$(window).scroll(function(){
+				$('#menu').stop().animate({'top':$(window).scrollTop()},'slow','easeInOutCirc');
+			});	
+			
+			$("#firstpane p.menu_head").click(function(){	   
+			$(this).css({backgroundImage:"url(down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+			$(this).siblings().css({backgroundImage:"url(left.png)"});
+			});
+
+		});
+    </script>
+    
+    <style>
+
+.menu_list {
+	width: 150px;
+}
+.menu_head {
+	height:25px;
+	text-align:center;
+	padding:5px;
+	cursor:pointer;
+	position:relative;
+	margin:1px;
+	opacity:0.85;
+    font-weight:bold;
+    background:#666;
+}
+
+.menu_head:hover{
+	background:#900;
+}
+
+.menu_body {
+	width:125px;
+	background:#666;
+	opacity:0.85;
+	display:none;
+}
+.menu_body a {
+	display:block;
+  	color:#000;
+  	background-color:#666;
+  	opacity:0.85;
+  	padding:10px;
+  	font-weight:bold;
+  	text-decoration:none;
+}
+.menu_body a:hover {
+  color: #900;
+}
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <header>
+  	<img width="250" height="150" src="image/dark_souls.jpg" />
+  </header>
+  
+  <div id="container">	 
+    
+  <div id="container2">
+  
+  	<nav id="menu">
+            
+            <div id="firstpane" class="menu_list">
+              <a href="index.htm"><p class="menu_head">Accueil</p></a>
+                <div class="menu_body">
+                </div>
+              <p class="menu_head">Equipements</p>
+                <div class="menu_body">
+                    <a href="Epees.htm">Épées</a>
+                    <a href="Haches.htm">Haches</a>
+                    <a href="Massu.htm">Massu</a>
+                </div>
+              <p class="menu_head">Sort</p>
+                <div class="menu_body">
+                    <a href="Pyromancie.htm">Pyromancies</a>
+                    <a href="Sorcelerie.htm">Sorcelleries</a>
+                    <a href="Miracles.htm">Miracles</a>
+               </div>
+              <p class="menu_head">Personnage</p>
+                <div class="menu_body">
+                    <a href="Classes.htm">Classes</a>
+                    <a href="Attributs.htm">Attributs</a>
+                    <a href="Humanity.htm">Humanité</a>
+               </div>
+            </div>
+    
+    </nav>
+        
+    <article>
+    
+    	<div class="Equip">
+        
+        	<img src="image/Pyromancie/Combustion.png" />
+            <p>Elementary pyromancy. Create powerful flame in hand.</p>
+            <h4>Notes</h4>
+            <ol>
+            	<li>Can equip multiple for increased uses.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Pyromancie/Black Flame.png" />
+            <p>A Pyromancy discovered from the Dark Abyss by a pyromancer who wondered into Oolacile. Conjure a great flame into one's palm.</p>
+            <h4>Notes</h4>
+            <ol>
+            	<li>Despite the description this dark Pyromancy does virtually 100% fire damage. The only physical aspect is the high poise damage.</li>
+                <li>Similar in execution to Great Combustion</li>
+                <li>This Pyromancy is not required for the trophy post-patch.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Pyromancie/Fire_Whip.png" />
+            <p>Primal pyromancy taught by Quelana of Izalith. Sweep foes with fire whip.</p>
+            <h4>Notes</h4>
+            <ol>
+            	<li>2 Hits per cast.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Pyromancie/Fire_Surge.png" />
+            <p>Pyromancy foreign to the Great Swamp. Create a surge of flame from palm of hand.</p>
+            <h4>Notes</h4>
+            <ol>
+            	<li>You can lock onto enemies and hold the spell button down to fire the spell. This will use the spell up until depleted or you let go of the button.</li>
+                <li>The Bloated Dredge that drops the spell won't attack you unless you agrevate it first.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Pyromancie/Fireball.png" />
+            <p>Standard pyromancy of the Great Swamp. Hurl fireball.</p>
+            <h4>Notes</h4>
+            <ol>
+            	<li>Since the Pyromancer class can start with this spell, it's possible to purchase it again twice from Laurentius and Quelana and hence equip it three times for a total of 24 uses.</li>
+                <li>The Dusk Crown Ring can increase the uses of this spell to a total of 36 in a single playthrough.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Pyromancie/Firestorm.png" />
+            <p>Primal pyromancy taught by Quelana of Izalith. Erect fire pillars in vicinity.</p>
+            <h4>Notes</h4>
+            <ol>
+            	<li>Equip multiple for increased uses.</li>
+            </ol>
+            
+        </div>
+        
+    </article>
+    
+    <!----- Fin Contenu----->
+    
+    <footer>
+    
+    	<p>This website has been made by Alexandre Tremblay © 2013, this page is a school project.</p>
+    	<a href="https://twitter.com/"><img src="image/twitter_logo.png" /></a>
+        <a href="http://www.youtube.com/"><img src="image/youtube_logo.png" /></a>
+        <a href="https://www.facebook.com/"><img src="image/facebook_logo.png" /></a>
+        
+  </footer>
+    
+  </div>
+  <!----- Fin Container2----->
+  
+  </div>
+  <!----- Fin Container----->
+  
+  </body>
+
+</html>

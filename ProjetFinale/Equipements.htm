@@ -1,0 +1,172 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset=utf-8>
+    <title>Dark Souls wiki</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+    <!-- Enlever les éléments HTML5 -->
+	<!--[if lte IE 8]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" language="javascript" src="jquery.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+			$(window).scroll(function(){
+				$('#menu').stop().animate({'top':$(window).scrollTop()},'slow','easeInOutCirc');
+			});	
+			
+			$("#firstpane p.menu_head").click(function(){	   
+			$(this).css({backgroundImage:"url(down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+			$(this).siblings().css({backgroundImage:"url(left.png)"});
+			});
+
+		});
+    </script>
+    
+    <style>
+
+.menu_list {
+	width: 150px;
+}
+.menu_head {
+	height:25px;
+	text-align:center;
+	padding:5px;
+	cursor:pointer;
+	position:relative;
+	margin:1px;
+	opacity:0.85;
+    font-weight:bold;
+    background:#666;
+}
+
+.menu_head:hover{
+	background:#900;
+}
+
+.menu_body {
+	width:125px;
+	background:#666;
+	opacity:0.85;
+	display:none;
+}
+.menu_body a {
+	display:block;
+  	color:#000;
+  	background-color:#666;
+  	opacity:0.85;
+  	padding:10px;
+  	font-weight:bold;
+  	text-decoration:none;
+}
+.menu_body a:hover {
+  color: #900;
+}
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <header>
+  	<img width="250" height="150" src="image/dark_souls.jpg" />
+  </header>
+  
+  <div id="container">	 
+    
+  <div id="container2">
+  
+  	<nav id="menu">
+            
+            <div id="firstpane" class="menu_list">
+              <a href="index.htm"><p class="menu_head">Accueil</p></a>
+                <div class="menu_body">
+                </div>
+              <p class="menu_head">Equipements</p>
+                <div class="menu_body">
+                    <a href="Epees.htm">Épées</a>
+                    <a href="Haches.htm">Haches</a>
+                    <a href="Massu.htm">Massu</a>
+                </div>
+              <p class="menu_head">Sort</p>
+                <div class="menu_body">
+                    <a href="Pyromancie.htm">Pyromancies</a>
+                    <a href="Sorcelerie.htm">Sorcelleries</a>
+                    <a href="Miracles.htm">Miracles</a>
+               </div>
+              <p class="menu_head">Personnage</p>
+                <div class="menu_body">
+                    <a href="Classes.htm">Classes</a>
+                    <a href="Attributs.htm">Attributs</a>
+                    <a href="Humanity.htm">Humanité</a>
+               </div>
+            </div>
+    
+    </nav>
+        
+    <article>
+        
+        <a href="Epees.htm"><div class="Equip">
+        
+        	<img src="image/Epees/broadsword.png" />
+            <img src="image/Epees/Longsword.png" />
+            <img src="image/Epees/Darksword.png" />
+            <img src="image/Epees/silv_knight_str_sword.png" />
+            <img src="image/Epees/balder_side_sword.png" />
+            <img src="image/Epees/astoras_straight_sword.png" />
+            
+        </div></a>
+        
+        <a href="Haches.htm"><div class="Equip">
+        
+        	<img src="image/Haches/battle_axe.png" />
+            <img src="image/Haches/butcher_knife.png" />
+            <img src="image/Haches/crescent_axe.png" />
+            <img src="image/Haches/gargoyle_tail_axe.png" />
+            <img src="image/Haches/golem_axe_1.png" />
+            <img src="image/Haches/hand_axe.png" />
+            
+        </div></a>
+        
+        <a href="Massu.htm"><div class="Equip">
+        
+        	<img src="image/Massu/blacksmith_hammer.png" />
+            <img src="image/Massu/Club.png" />
+            <img src="image/Massu/hammer_of_vamos.png" />
+            <img src="image/Massu/mace.png" />
+            <img src="image/Massu/morning_star.png" />
+            <img src="image/Massu/warpick.png" />
+            
+        </div></a>
+        
+    </article>
+    
+    <!----- Fin Contenu----->
+    
+    <footer>
+    
+    	<p>This website has been made by Alexandre Tremblay © 2013, this page is a school project.</p>
+    	<a href="https://twitter.com/"><img src="image/twitter_logo.png" /></a>
+        <a href="http://www.youtube.com/"><img src="image/youtube_logo.png" /></a>
+        <a href="https://www.facebook.com/"><img src="image/facebook_logo.png" /></a>
+        
+  </footer>
+    
+  </div>
+  <!----- Fin Container2----->
+  
+  </div>
+  <!----- Fin Container----->
+  
+  </body>
+
+</html>

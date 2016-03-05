@@ -1,0 +1,222 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset=utf-8>
+    <title>Dark Souls wiki</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+    <!-- Enlever les éléments HTML5 -->
+	<!--[if lte IE 8]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" language="javascript" src="jquery.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+			$(window).scroll(function(){
+				$('#menu').stop().animate({'top':$(window).scrollTop()},'slow','easeInOutCirc');
+			});	
+			
+			$("#firstpane p.menu_head").click(function(){	   
+			$(this).css({backgroundImage:"url(down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+			$(this).siblings().css({backgroundImage:"url(left.png)"});
+			});
+
+		});
+    </script>
+    
+    <style>
+
+.menu_list {
+	width: 150px;
+}
+.menu_head {
+	height:25px;
+	text-align:center;
+	padding:5px;
+	cursor:pointer;
+	position:relative;
+	margin:1px;
+	opacity:0.85;
+    font-weight:bold;
+    background:#666;
+}
+
+.menu_head:hover{
+	background:#900;
+}
+
+.menu_body {
+	width:125px;
+	background:#666;
+	opacity:0.85;
+	display:none;
+}
+.menu_body a {
+	display:block;
+  	color:#000;
+  	background-color:#666;
+  	opacity:0.85;
+  	padding:10px;
+  	font-weight:bold;
+  	text-decoration:none;
+}
+.menu_body a:hover {
+  color: #900;
+}
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <header>
+  	<img width="250" height="150" src="image/dark_souls.jpg" />
+  </header>
+  
+  <div id="container">	 
+    
+  <div id="container2">
+  
+  	<nav id="menu">
+            
+            <div id="firstpane" class="menu_list">
+              <a href="index.htm"><p class="menu_head">Accueil</p></a>
+                <div class="menu_body">
+                </div>
+              <p class="menu_head">Equipements</p>
+                <div class="menu_body">
+                    <a href="Epees.htm">Épées</a>
+                    <a href="Haches.htm">Haches</a>
+                    <a href="Massu.htm">Massu</a>
+                </div>
+              <p class="menu_head">Sort</p>
+                <div class="menu_body">
+                    <a href="Pyromancie.htm">Pyromancies</a>
+                    <a href="Sorcelerie.htm">Sorcelleries</a>
+                    <a href="Miracles.htm">Miracles</a>
+               </div>
+              <p class="menu_head">Personnage</p>
+                <div class="menu_body">
+                    <a href="Classes.htm">Classes</a>
+                    <a href="Attributs.htm">Attributs</a>
+                    <a href="Humanity.htm">Humanité</a>
+               </div>
+            </div>
+    
+    </nav>
+        
+    <article>
+        
+        <div class="Equip">
+        
+        	<img src="image/Massu/blacksmith_hammer.png" />
+            <h4>Upgrade cost: </h4>
+            <p>200 souls</p>  
+            <h4>Acquired from:</h4>
+            <ol>
+            	<li>Drop by Andre of Astora</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Massu/Club.png" />
+            <h4>Upgrade cost: </h4>
+            <p>200 souls + Shards</p>  
+            <h4>Acquired from:</h4>
+            <ol>
+            	<li>Sold by Undead Merchant (Male) for 150 Souls</li>
+                <li>Treasure: Occult Club found in Anor Londo together with Havel's gear.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Massu/hammer_of_vamos.png" />
+            <h4>Upgrade cost: </h4>
+            <p>Twinkling Titanite</p>  
+            <h4>Acquired from:</h4>
+            <ol>
+            	<li>Murdering Blacksmith Vamos</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Massu/mace.png" />
+            <h4>Upgrade cost: </h4>
+            <p>200 souls</p>  
+            <h4>Acquired from:</h4>
+            <ol>
+            	<li>Starter Item for the Cleric class</li>
+                <li>Sold by Patches the Hyena at Firelink Shrine for 3,000 souls.</li>
+                <li>Cleric corpse before Pinwheel boss fog</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Massu/morning_star.png" />
+            <h4>Upgrade cost: </h4>
+            <p>200 souls</p>  
+            <h4>Acquired from:</h4>
+            <ol>
+            	<li>Firelink Shrine, in a chest found in the area you can reach by dropping from the ledge you find by following the stairs that is facing Petrus.</li>
+            </ol>
+            <h4>Note:</h4>
+            <ol>
+            	<li>The description lies. It doesn't inflict thrust damage at all.</li>
+            </ol>
+            
+        </div>
+        
+        <div class="Equip">
+        
+        	<img src="image/Massu/warpick.png" />
+            <h4>Upgrade cost: </h4>
+            <p>x souls</p>  
+            <h4>Acquired from:</h4>
+            <ol>
+            	<li>Purchase from Andre of Astora (NPC) in Undead Parish for 800 souls</li>
+            </ol>
+            <h4>Hints and Tips:</h4>
+            <ol>
+            	<li>This is pretty much the same as a mace. However, miss recovery seems to be a little fast than the mace.</li>
+            </ol>
+            
+        </div>
+        
+    </article>
+    
+    <!----- Fin Contenu----->
+    
+    <footer>
+    
+    	<p>This website has been made by Alexandre Tremblay © 2013, this page is a school project.</p>
+    	<a href="https://twitter.com/"><img src="image/twitter_logo.png" /></a>
+        <a href="http://www.youtube.com/"><img src="image/youtube_logo.png" /></a>
+        <a href="https://www.facebook.com/"><img src="image/facebook_logo.png" /></a>
+        
+  </footer>
+    
+  </div>
+  <!----- Fin Container2----->
+  
+  </div>
+  <!----- Fin Container----->
+  
+  </body>
+
+</html>
