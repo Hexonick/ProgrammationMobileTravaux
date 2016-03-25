@@ -29,6 +29,17 @@
 			$(this).siblings().css({backgroundImage:"url(left.png)"});
 			});
 
+			function creationOption(select){
+				for(var i = 1; i<= 30; i++){
+				var opt = document.createElement('option');
+					opt.value = i;
+					opt.innerHTML = i;
+					select.appendChild(opt);
+				}
+			};
+			for(var x = 0; x< document.getElementsByName("txtNombre").length; x++){
+				creationOption(document.getElementsByName("txtNombre")[x]);
+			}
 		});
     </script>
     
@@ -126,7 +137,13 @@
                 <li>Can be traded to Snuggly for a Ring of Sacrifice.</li>
                 <li>Can be sold to Kingseeker Frampt for 1,000 souls.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 50$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="50">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -140,7 +157,13 @@
                 <li>Can be traded to Snuggly for a Ring of Sacrifice.</li>
                 <li>Can be sold to Kingseeker Frampt for 2,000 souls.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 80$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="80">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
     </article>

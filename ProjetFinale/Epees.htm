@@ -17,7 +17,7 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" language="javascript" src="jquery.js"></script>
-    
+    <script src="script.js"></script>
     <script>
         $(document).ready(function(){
 			$(window).scroll(function(){
@@ -29,10 +29,21 @@
 			$(this).siblings().css({backgroundImage:"url(left.png)"});
 			});
 
+			function creationOption(select){
+				for(var i = 1; i<= 30; i++){
+				var opt = document.createElement('option');
+					opt.value = i;
+					opt.innerHTML = i;
+					select.appendChild(opt);
+				}
+			};
+			for(var x = 0; x< document.getElementsByName("txtNombre").length; x++){
+				creationOption(document.getElementsByName("txtNombre")[x]);
+			}
 		});
     </script>
     
-    <style>
+     <style>
 
 .menu_list {
 	width: 150px;
@@ -123,7 +134,13 @@
             <h4>Acquired from:</h4>
             <p>Starting equipment for Knight.</p>
             <p>You can buy this sword from Andrei of Astora for 1000 souls.Located in the basement of the old church, a disued building.</p>
-            
+            </br><p style="color:white;">Prix: 13$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="13">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -135,7 +152,13 @@
             <p>Starting equipment for Warrior.</p>
             <p>Can be bought from Andrei of Astora for 1000 souls.</p>
             <p>Uncommon drop from Hollow Soildier with Longswords.</p>
-            
+            </br><p style="color:white;">Prix: 23$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="23">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -145,7 +168,13 @@
             <p>200 souls + Titanite.</p>  
             <h4>Acquired from:</h4>
             <p>Reaching Rank 2 in the Darkwraith covenant.</p>
-            
+            </br><p style="color:white;">Prix: 16$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="16">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -155,7 +184,13 @@
             <p>2000 souls + Twinkling Titanite.</p>  
             <h4>Acquired from:</h4>
             <p>Rare drop from the sword wielding Silver Knight in Anor Londo.</p>
-            
+            </br><p style="color:white;">Prix: 42$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="42">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -165,7 +200,13 @@
             <p>200 souls + Titanite.</p>  
             <h4>Acquired from:</h4>
             <p>Rare drop from Balder Knights (with the sword).</p>
-            
+            </br><p style="color:white;">Prix: 19$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="19">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -175,7 +216,13 @@
             <p>2000 souls + Twinkling Titanite.</p>  
             <h4>Acquired from:</h4>
             <p>Found in front of the Undead Dragon in the Valley of Drakes.</p>
-            
+            </br><p style="color:white;">Prix: 31$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="31">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
     </article>

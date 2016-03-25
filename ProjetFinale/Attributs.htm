@@ -1,7 +1,6 @@
 <!doctype html>
 
 <html>
-
   <head>
 
     <meta charset=utf-8>
@@ -29,6 +28,17 @@
 			$(this).siblings().css({backgroundImage:"url(left.png)"});
 			});
 
+			function creationOption(select){
+				for(var i = 1; i<= 30; i++){
+				var opt = document.createElement('option');
+					opt.value = i;
+					opt.innerHTML = i;
+					select.appendChild(opt);
+				}
+			};
+			for(var x = 0; x< document.getElementsByName("txtNombre").length; x++){
+				creationOption(document.getElementsByName("txtNombre")[x]);
+			}
 		});
     </script>
     
@@ -124,7 +134,13 @@
                 <li>If you do not meet the minimum dexterity required, you will stagger after every hit on an opponent.</li>
                 <li>The speed of spell casting increases with dexterity, max speed at 45 dex.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 23$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="23">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -136,7 +152,13 @@
                 <li>The roll and run speed of the player will vary with the amount of equipped weight.</li>
                 <li>Max equip burden can be increased further by wearing Havel's Ring, Ring of Favor and Protection or Mask of the Father.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 16$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="16">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -146,7 +168,13 @@
             <ol>
             	<li>Miracles require a minimum faith level to cast. (You can acquire without the required stats and even attune the spell.)</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 34$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="34">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -156,7 +184,13 @@
             <ol>
             	<li>Sorceries require a minimum intelligence level to cast.(You can acquire without the required stats and even attune the spell, but attempting to cast will leave your character scratching their head, literally.)</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 24$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="24">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -167,7 +201,13 @@
             	<li>Defense (including physical and flame) are also affected by your total level and the diminishing returns from both appear to stack, causing resistance's effectiveness at higher levels to become negligible. Poison defense does not suffer from this double diminishing return effect, although armor and the poisonbite ring are better options.</li>
                 <li>Resistance offers a static debuff on damage. 1 point of res = 1 point less damage taken, or 1% less damage taken, whichever value is -lower-. Attacks that would normally kill you have about a 7 time multiplier on damage reduced. This only has effect on PvE enemies in game, not other Players and hence is not useful for PvP.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 18$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="18">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -178,7 +218,13 @@
             	<li>Most weapons require a minimum strength level to be wielded properly.</li>
                 <li>Two-handing the weapon will give a 50% strength bonus, affecting both the weapon requirements and damage modifier.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 19$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="19">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
     </article>

@@ -29,6 +29,17 @@
 			$(this).siblings().css({backgroundImage:"url(left.png)"});
 			});
 
+			function creationOption(select){
+				for(var i = 1; i<= 30; i++){
+				var opt = document.createElement('option');
+					opt.value = i;
+					opt.innerHTML = i;
+					select.appendChild(opt);
+				}
+			};
+			for(var x = 0; x< document.getElementsByName("txtNombre").length; x++){
+				creationOption(document.getElementsByName("txtNombre")[x]);
+			}
 		});
     </script>
     
@@ -125,7 +136,13 @@
                 <li>This spell is especially useful in the Tomb of Giants.</li>
                 <li>Can be casted while any other buff is active, can even override itself.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 11$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="11">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -138,7 +155,13 @@
                 <li>Can be successfully cast without an initial "lock on". Multiple soul arrows will hover above the player for 100 seconds. Each individual soul arrow will seek the closest target available in the direction the player is facing, within close to medium range.</li>
                 <li>Projectiles will dissipate if they come into direct contact with an object, i.e. wall, bush, etc.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 14$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="14">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -150,7 +173,13 @@
             	<li>Starting spell for the Sorcerer class.</li>
                 <li>This spell seems to deal damage equal to (Catalyst Mag. Adj. x 0.9). This was tested by using two catalysts at Int 50 against the first Undead in Firelink Shrine.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 23$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="23">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -163,7 +192,13 @@
                 <li>Unequipping the shield, or letting the spell run out, cancels this effect.</li>
                 <li>Does not raise damage when used on weapons on the left hand.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 30$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="30">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -176,7 +211,13 @@
                 <li>Does heavy stamina damage if blocked, staggering most opponents.</li>
                 <li>Arcs slightly towards opponents.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 34$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="34">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -190,7 +231,13 @@
                 <li>A slow casting time comparable to heavy soul arrow.</li>
                 <li>This spell seems to deal damage equal to (Catalyst Mag. Adj. x 2.5). This was tested by using two catalysts at Int 50 against the first Undead in Firelink Shrine.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 16$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="16">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
     </article>

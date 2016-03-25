@@ -75,6 +75,7 @@ body{
 	padding:0;
 	margin:0 auto;	
 	overflow:auto;
+	
 }
 
 #container2{
@@ -87,6 +88,7 @@ body{
 	-moz-border-radius-bottomright: 25px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
+	
 }
 
 header{
@@ -141,9 +143,10 @@ article{
 }
 
 #menu{
-	width:20%;
+	width:13%;
 	float:left;
 	position:relative;
+	
 }
 
 #liste {
@@ -204,4 +207,61 @@ footer img{
 	padding:0;
 	margin-left:10px;
 	float:right;
+}
+
+.menu_list {
+	width: 150px;
+}
+.menu_head {
+	height:25px;
+	text-align:center;
+	padding:5px;
+	cursor:pointer;
+	position:relative;
+	margin:1px;
+	opacity:0.85;
+    font-weight:bold;
+    background:#666;
+}
+
+.menu_head:hover{
+	background:#900;
+}
+
+.menu_body {
+	width:125px;
+	background:#666;
+	opacity:0.85;
+	display:none;
+}
+.menu_body a {
+	display:block;
+  	color:#000;
+  	background-color:#666;
+  	opacity:0.85;
+  	padding:10px;
+  	font-weight:bold;
+  	text-decoration:none;
+}
+.menu_body a:hover {
+  color: #900;
+}
+
+
+
+
+/*CSS FORMULAIRE */
+/*----------------------------------------------------------------*/
+.Form{
+	float:left;
+	border:solid;
+	border-color:white;
+	background-color:rgba(255,255,255,0.7);
+	position:relative;
+	left:21%;
+	width:50%;
+}
+fieldset{
+	border-color:black;
+	border:solid;
 }

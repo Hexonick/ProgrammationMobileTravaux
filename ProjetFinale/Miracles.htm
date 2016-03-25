@@ -29,6 +29,17 @@
 			$(this).siblings().css({backgroundImage:"url(left.png)"});
 			});
 
+			function creationOption(select){
+				for(var i = 1; i<= 30; i++){
+				var opt = document.createElement('option');
+					opt.value = i;
+					opt.innerHTML = i;
+					select.appendChild(opt);
+				}
+			};
+			for(var x = 0; x< document.getElementsByName("txtNombre").length; x++){
+				creationOption(document.getElementsByName("txtNombre")[x]);
+			}
 		});
     </script>
     
@@ -124,7 +135,13 @@
             	<li>Clerics have this spell by default.</li>
                 <li>The Ring of the Sun Princess will slightly increase the healing amount.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 10$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="10">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -138,7 +155,13 @@
                 <li>Can also deflect sorceries such as Homing Soulmass, as well as arrows and crossbow bolts.</li>
                 <li>One cast will not knock down enemies with high poise.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 8$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="8">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -149,7 +172,13 @@
             <ol>
             	<li>Reduces incoming magic damage for a short duration. </li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 7$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="7">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>     
         
         <div class="Equip">
@@ -163,7 +192,13 @@
                 <li>Great lightning spear - 644</li>
                 <li>Sunlight spear - 861</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 18$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="18">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>      
         
         <div class="Equip">
@@ -174,7 +209,13 @@
             <ol>
             	<li>The Ring of the Sun Princess will increase the healing to 12HP/s (duration unchanged), for a total of 720HP.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 12$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="12">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -185,7 +226,13 @@
             <ol>
             	<li>Sunlight Blade scales with your Talisman's Magic Adjust stat. It does not scale with your Faith stat. Be sure to wield the best talisman for your Faith level in order to get the maximum benefits of this miracle.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 35$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="35">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
     </article>

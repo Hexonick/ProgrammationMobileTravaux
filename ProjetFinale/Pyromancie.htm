@@ -29,6 +29,17 @@
 			$(this).siblings().css({backgroundImage:"url(left.png)"});
 			});
 
+			function creationOption(select){
+				for(var i = 1; i<= 30; i++){
+				var opt = document.createElement('option');
+					opt.value = i;
+					opt.innerHTML = i;
+					select.appendChild(opt);
+				}
+			};
+			for(var x = 0; x< document.getElementsByName("txtNombre").length; x++){
+				creationOption(document.getElementsByName("txtNombre")[x]);
+			}
 		});
     </script>
     
@@ -123,12 +134,18 @@
             <ol>
             	<li>Can equip multiple for increased uses.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 18$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="18">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
         
-        	<img src="image/Pyromancie/Black Flame.png" />
+        	<img src="image/Pyromancie/BlackFlame.png" />
             <p>A Pyromancy discovered from the Dark Abyss by a pyromancer who wondered into Oolacile. Conjure a great flame into one's palm.</p>
             <h4>Notes</h4>
             <ol>
@@ -136,7 +153,13 @@
                 <li>Similar in execution to Great Combustion</li>
                 <li>This Pyromancy is not required for the trophy post-patch.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 22$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="22">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -147,7 +170,13 @@
             <ol>
             	<li>2 Hits per cast.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 12$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="12">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -159,7 +188,13 @@
             	<li>You can lock onto enemies and hold the spell button down to fire the spell. This will use the spell up until depleted or you let go of the button.</li>
                 <li>The Bloated Dredge that drops the spell won't attack you unless you agrevate it first.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 40$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="40">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -171,7 +206,13 @@
             	<li>Since the Pyromancer class can start with this spell, it's possible to purchase it again twice from Laurentius and Quelana and hence equip it three times for a total of 24 uses.</li>
                 <li>The Dusk Crown Ring can increase the uses of this spell to a total of 36 in a single playthrough.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 15$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="15">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
         <div class="Equip">
@@ -182,7 +223,13 @@
             <ol>
             	<li>Equip multiple for increased uses.</li>
             </ol>
-            
+            </br><p style="color:white;">Prix: 45$</p>
+            <form name="form1" action="Form.html" method="post" onsubmit="return envoiDonner(this)">
+				<input type="hidden" name="hidden1" value="45">
+				</br><select name="txtNombre">					
+				</select></br></br>
+				<input type="submit" name="btnAcheter" value="Commander">
+			</form>
         </div>
         
     </article>
