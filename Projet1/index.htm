@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset=utf-8>
+    <title>Dark Souls wiki</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" language="javascript" src="jquery.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+			$(window).scroll(function(){
+				$('#menu').stop().animate({'top':$(window).scrollTop()},'slow','easeInOutCirc');
+			});	
+			
+			$("#firstpane p.menu_head").click(function(){	   
+			$(this).css({backgroundImage:"url(down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+			$(this).siblings().css({backgroundImage:"url(left.png)"});
+			});
+
+		});
+    </script>
+    
+    <style>
+
+.menu_list {
+	width: 150px;
+}
+.menu_head {
+	height:25px;
+	text-align:center;
+	padding:5px;
+	cursor:pointer;
+	position:relative;
+	margin:1px;
+	opacity:0.85;
+    font-weight:bold;
+    background:#666;
+}
+
+.menu_head:hover{
+	background:#900;
+}
+
+.menu_body {
+	width:125px;
+	background:#666;
+	opacity:0.85;
+	display:none;
+}
+.menu_body a {
+	display:block;
+  	color:#000;
+  	background-color:#666;
+  	opacity:0.85;
+  	padding:10px;
+  	font-weight:bold;
+  	text-decoration:none;
+}
+.menu_body a:hover {
+  color: #900;
+}
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <a class="navbar-brand" href="index.htm">Darksouls</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.htm">Accueil</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Equipements<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Epees.htm">Épées</a></li>
+            <li><a href="Haches.htm">Hache</a></li>
+            <li><a href="Massu.htm">Massu</a></li>
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sorts<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Pyromancie.htm">Pyromancie</a></li>
+            <li><a href="Miracles.htm">Miracles</a></li>
+            <li><a href="Sorcelerie.htm">Sorceleries</a></li>
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personnage<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Classes.htm">Classes</a></li>
+            <li><a href="Attributs.htm">Attributs</a></li>
+            <li><a href="Humanity.htm">Humanite</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <div id="container">	 
+    
+  <div id="container2">
+  
+  	<article>
+        
+        <div class="contenu">
+        
+    		<p>Welcome in our brand new website for the Dark Souls wiki. All the information into the site is safe and proven by the players.
+            </p>
+            
+    	</div>
+        
+        <div class="contenu">
+        
+        	<p>
+            Developed by From Software, Dark Souls is the spiritual successor to the Playstation exclusive Demon's Souls, an action RPG experience that surprised by not only gaining critical acclaim, but obtaining publishing in 3 regions and racking estimated sales of over 1 million units. The original game's appeal lay with its renowned difficulty and trial-and-error approach, one that Dark Souls promises to sustain, thus attracting Demon's Souls' fanbase. The developer and publisher had both stated that there were no intentions for DLC however, following the release of the Prepare to Die Edition for PC with added content, an expansion DLC was released for both PS3 and Xbox360, titled Artorias of the Abyss.
+            </p>
+            
+        </div>
+        
+    </article>
+    
+    <!----- Fin Contenu----->
+    
+    <footer>
+    
+    	<p>This website has been made by Alexandre Tremblay © 2013, this page is a school project.</p>
+    	<a href="https://twitter.com/"><img src="image/twitter_logo.png" /></a>
+        <a href="http://www.youtube.com/"><img src="image/youtube_logo.png" /></a>
+        <a href="https://www.facebook.com/"><img src="image/facebook_logo.png" /></a>
+        
+  </footer>
+    
+  </div>
+  <!----- Fin Container2----->
+  
+  </div>
+  <!----- Fin Container----->
+  
+  </body>
+
+</html>

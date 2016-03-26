@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset=utf-8>
+    <title>Dark Souls wiki</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+    <!-- Enlever les éléments HTML5 -->
+	<!--[if lte IE 8]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+			$(window).scroll(function(){
+				$('#menu').stop().animate({'top':$(window).scrollTop()},'slow','easeInOutCirc');
+			});	
+			
+			$("#firstpane p.menu_head").click(function(){	   
+			$(this).css({backgroundImage:"url(down.png)"}).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+			$(this).siblings().css({backgroundImage:"url(left.png)"});
+			});
+		});
+    </script>
+	
+	<script>
+	alert("Merci " + sessionStorage.getItem('prenom') + " " + sessionStorage.getItem('nom') + " d'avoir acheté " + sessionStorage.getItem('command') + " produit(s) sur notre site pour un prix total de " + sessionStorage.getItem('prix') + "$. \n\rÀS l'aide de votre carte de crédit ayant comme numéro: " + sessionStorage.getItem('numCarte'));
+	//document.getElementsByName("text1").innerHTML = msg;
+	</script>
+    
+    <style>
+
+.menu_list {
+	width: 150px;
+}
+.menu_head {
+	height:25px;
+	text-align:center;
+	padding:5px;
+	cursor:pointer;
+	position:relative;
+	margin:1px;
+	opacity:0.85;
+    font-weight:bold;
+    background:#666;
+}
+
+.menu_head:hover{
+	background:#900;
+}
+
+.menu_body {
+	width:125px;
+	background:#666;
+	opacity:0.85;
+	display:none;
+}
+.menu_body a {
+	display:block;
+  	color:#000;
+  	background-color:#666;
+  	opacity:0.85;
+  	padding:10px;
+  	font-weight:bold;
+  	text-decoration:none;
+}
+.menu_body a:hover {
+  color: #900;
+}
+
+.Equip{
+	width:100%;
+}
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <a class="navbar-brand" href="index.htm">Darksouls</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.htm">Accueil</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Equipements<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Epees.htm">Épées</a></li>
+            <li><a href="Haches.htm">Hache</a></li>
+            <li><a href="Massu.htm">Massu</a></li>
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sorts<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Pyromancie.htm">Pyromancie</a></li>
+            <li><a href="Miracles.htm">Miracles</a></li>
+            <li><a href="Sorcelerie.htm">Sorceleries</a></li>
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personnage<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Classes.htm">Classes</a></li>
+            <li><a href="Attributs.htm">Attributs</a></li>
+            <li><a href="Humanity.htm">Humanite</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <div id="container">	 
+    
+  <div id="container2">
+        
+    <article>
+        
+        <div class="Equip">
+		
+		</div>
+        
+    </article>
+    
+    <!----- Fin Contenu----->
+    
+    
+    
+  </div>
+  <!----- Fin Container2----->
+  
+  </div>
+  <!----- Fin Container----->
+  
+  </body>
+
+</html>
