@@ -1,4 +1,4 @@
-function valider(f,val){
+﻿function valider(f,val){
 	if(val == true){
 		var nom = f.nom.value;
 		var prenom = f.prenom.value;
@@ -9,24 +9,26 @@ function valider(f,val){
 		var nomCarte = f.nomCarte.value;
 		var monthCarte = f.month.value;
 		var yearCarte = f.year.value;
-		var regex = [/^([a-zA-Z'àâéèêôùûçÀÂÉÈÔÙÛÇ[:blank:]-]{3,30})$/ , /^[0-9]{16}$/ , /^[0-9]{3}$/, /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i];
+		var regex = [/^([a-zA-Z'àâéèêôùûçÀÂÉÈÔÙÛÇ\s-]{3,30})$/ , /^[0-9]{16}$/ , /^[0-9]{3}$/, /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i];
 		
 		sessionStorage.setItem('nom', nom);
 		sessionStorage.setItem('prenom', prenom);
 		sessionStorage.setItem('email', email);
 		sessionStorage.setItem('numCarte', numCarte);
 		
+		alert(nom);
+		
 		if(!regex[3].test(email)) 
 		{  
 			alert("Email invalide!");
 			return false; 
 		}
-		if(regex[0].test(nom)) 
+		if(!regex[0].test(nom)) 
 		{  
 			alert("Nom invalide!");
 			return false; 
 		}
-		if(regex[0].test(prenom)) 
+		if(!regex[0].test(prenom)) 
 		{  
 			alert("Prenom invalide");
 			return false; 
@@ -41,7 +43,7 @@ function valider(f,val){
 			alert("CVC invalide!");
 			return false; 
 		}
-		if(regex[0].test(nomCarte)) 
+		if(!regex[0].test(nomCarte)) 
 		{  
 			alert("Nom de la carte invalide!");
 			return false; 
